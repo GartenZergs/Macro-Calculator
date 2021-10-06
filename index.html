@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="macroApp-wrapper">
+        <div class="navbar">
+            <div class="racebar">
+                <div class="race">
+                    <p class="racetext">Zerg</p>
+                </div>
+                <div class="race">
+                    <p class="racetext">Terran</p>
+                </div>
+                <div class="race">
+                    <p class="racetext">Protoss</p>
+                </div>
+            </div>
+            <div class="mineralbar">
+                <p class="incometext" id="mincounter">Overmins/Min: 912.00</p>
+                <div class="WorkerSelect">
+                    <p class="Worker" id="minworker">Worker: 16</p>
+                    <button onclick="decreaseMineralWorker()">-</button>
+                    <button onclick="increaseMineralWorker()">+</button>
+                </div>
+                <div class="MuleSelect">
+                    <p class="Mules" id="minmules">Mules: 0</p>
+                    <button onclick="decreaseMules()">-</button>
+                    <button onclick="increaseMules()">+</button>
+                </div>
+                
+
+
+            </div>
+            <div class="gasbar">
+                <p class="incometext" id="gascounter">Overgas/Min: 325.20</p>
+                <div class="WorkerSelect">
+                    <p class="Worker" id="gasworker">Worker: 6</p>
+                    <button onclick="decreaseGasWorker()">-</button>
+                    <button onclick="increaseGasWorker()">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mainframe">
+            <div class="unitbox">
+            </div>
+            <div class="mineralbox">
+                <div class="min_income_bar"></div>
+                <div class="min_cost_bar"></div>
+            </div>
+            <div class="gasbox">
+                <div class="gas_income_bar"></div>
+                <div class="gas_cost_bar"></div>
+            </div>
+            <div class="footer"></div>
+        </div>
+
+        
+
+    </div>
+    <script src="sandbox.js"></script>
+</body>
+</html>
