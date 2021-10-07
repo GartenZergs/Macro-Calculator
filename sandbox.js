@@ -403,6 +403,7 @@ function refreshIncome()
     gas_income=54.2*gasworker;
     overmins=min_income-min_costs;
     overgas=gas_income-gas_costs;
+    supply_constant=100/8; // 100 minerals per 8 supply
     document.getElementById('mincounter').innerText=`Overmins/Min: ${overmins.toFixed(2)}`;
     document.getElementById('gascounter').innerText=`Overgas/Min: ${overgas.toFixed(2)}`;
 
@@ -410,7 +411,8 @@ function refreshIncome()
     min_costs=0;
     gas_costs=0;
     selectedUnits.forEach(unit =>{
-        min_costs+=60/unit.time*(unit.minerals + 8*unit.supply);
+        // Calculate costs for each unit
+        min_costs+=60/unit.time*(unit.minerals + supply_constant*unit.supply);
         gas_costs+=60/unit.time*(unit.gas);
     });
 
