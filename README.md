@@ -24,3 +24,8 @@ Our income is visualized by the blue and green bars. If you add units, they will
 As the calculator assumes constant production, it is obviously only useful for protoss and terran. I only included zerg for the sake of completeness.
 
 Have fun!
+
+
+## Legal
+All image assets are owned by Blizzard and are used accordingly to https://www.blizzard.com/de-de/legal ©Blizzard Entertainment, Inc. All rights reserved. Wings of Liberty, Heart of the Swarm, Legacy of the Void, Starcraft, Brood War, Battle.net, and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc, in the U.S. and/or other countries.
+https://www.blizzard.com/de-de/legal
