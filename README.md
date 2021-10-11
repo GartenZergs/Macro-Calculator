@@ -1,7 +1,7 @@
 # [Macro-Calculator](https://rotschnabel.github.io/)
 ## About
 This app is an economy calculator for the game Starcraft II. If you've ever wondered how much you can produce when you have for example 3 bases with terran, now you can calculate it and experiment with different production-compositions!
-![Example](/images/Calculator.png)
+![Example](/images/calculator.png)
 
 ## How does it work?
 1. Set your income, by setting the amount of workers and MULES mining minerals and gas.
