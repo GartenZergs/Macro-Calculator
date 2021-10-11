@@ -10,7 +10,7 @@ This app is an economy calculator for the game Starcraft II. If you've ever wond
 
 ### Example:
 ![Example](/images/calculator_example.png)
-Above you see that we are a terran with 3 Base-Saturated Economy (3*16 Mineral-Worker and 3*6 Gas-Worker). We are preparing for a 4th base and even more worker, so want to constantly produce 3 workers, which are added to the "production-tab" on the bottom. We also want to constantly produce an army. In our case we chose for continous production of:
+Above you see that we are a terran with 3 Base-Saturated Economy (x3 16 Mineral-Worker and x3 6 Gas-Worker). We are preparing for a 4th base and even more worker, so we want to constantly produce 3 workers, which are added to the "production-tab" on the bottom. We also want to constantly produce an army. In our case we chose for continous production of:
 * 2 Marauders
 * 3 Marines
 * 1 Tank
