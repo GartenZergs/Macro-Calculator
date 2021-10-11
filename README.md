@@ -11,11 +11,11 @@ This app is an economy calculator for the game Starcraft II. If you've ever wond
 ### Example:
 ![Example](/images/calculator_example.png)
 Above you see that we are a terran with 3 Base-Saturated Economy (3*16 Mineral-Worker and 3*6 Gas-Worker). We are preparing for a 4th base and even more worker, so want to constantly produce 3 workers, which are added to the "production-tab" on the bottom. We also want to constantly produce an army. In our case we chose for continous production of:
-*2 Marauders
-*3 Marines
-*1 Tank
-*2 Medivacs
-*Double Upgrades
+* 2 Marauders
+* 3 Marines
+* 1 Tank
+* 2 Medivacs
+* Double Upgrades
 
 Our income is visualized by the blue and green bars. If you add units, they will "fill" up with a red bar, visualizing the cost of your production. Obviously the red bars should stay below the blue- and green bars, because you cannot spend more money than you get per minute. As you can see we have a "buffer" of 207 minerals and 100 gas per minute, which we could use to build additional buildings like turrets, CC's etc.
 
