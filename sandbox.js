@@ -145,14 +145,14 @@ let terranlist = [
 
 let protosslist = [
     { name: 'probe', minerals: 50, gas: 0 , supply: 1, time:12},
-    { name: 'mothership', minerals: 400, gas: 400 , supply: 8, time:14},
+    { name: 'mothership', minerals: 400, gas: 400 , supply: 8, time:114},
 
-    { name: 'zealot', minerals: 100, gas: 0 , supply: 2, time:27},
-    { name: 'sentry', minerals: 50, gas: 100 , supply: 2, time:26},
-    { name: 'stalker', minerals: 125, gas: 50 , supply: 2, time:30},
-    { name: 'adept', minerals: 100, gas: 25 , supply: 2, time:30},
-    { name: 'high_templar', minerals: 50, gas: 150 , supply: 2, time:39},
-    { name: 'dark_templar', minerals: 125, gas: 125 , supply: 2, time:39},
+    { name: 'zealot', minerals: 100, gas: 0 , supply: 2, time:20},
+    { name: 'sentry', minerals: 50, gas: 100 , supply: 2, time:23},
+    { name: 'stalker', minerals: 125, gas: 50 , supply: 2, time:23},
+    { name: 'adept', minerals: 100, gas: 25 , supply: 2, time:20},
+    { name: 'high_templar', minerals: 50, gas: 150 , supply: 2, time:32},
+    { name: 'dark_templar', minerals: 125, gas: 125 , supply: 2, time:32},
 
     { name: 'observer', minerals: 25, gas: 75 , supply: 1, time:21},
     { name: 'warpprism', minerals: 250, gas: 0 , supply: 2, time:36},
