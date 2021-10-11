@@ -232,8 +232,19 @@ function displayZergUnits()
     currentrace=0;
     zerglist.forEach(unit => {
         uniticon = document.createElement('div');
-        uniticon.innerHTML=`<img src="icons/${unit.name}.png" width=${iconwidth} >`;
-        uniticon.setAttribute('class','uniticon_new');
+        uniticon.innerHTML=`<img src="icons/${unit.name}.png" width=${iconwidth} >  <div class="tooltiptext"> 
+        <div>Minerals: <img src="icons/minerals.png">  ${unit.minerals}  </div>
+        <div>Gas: <img src="icons/gas.png">  ${unit.gas} </div>
+        <div>Supply: <img src="icons/supply.png">  ${unit.supply} </div>
+        <div>Time: <img src="icons/time.png">  ${unit.time} </div>
+        <div class="costs"> 
+        <div> Unit-Costs/Min: <img src="icons/minerals.png"> ${(unit.minerals*60/unit.time).toFixed(2)} </div>
+        <div> Supply-Costs/Min: <img src="icons/minerals.png"> ${(750/unit.time*unit.supply).toFixed(2)} </div>
+        <div> Unit-Costs/Min: <img src="icons/gas.png"> ${(unit.gas*60/unit.time).toFixed(2)} </div>
+        </div>
+
+         </div>`;
+        uniticon.setAttribute('class','uniticon_new tooltip');
         unitbox.append(uniticon);
     });
 }
@@ -244,7 +255,7 @@ function displayTerranUnits()
     currentrace=1;
     terranlist.forEach(unit => {
         uniticon = document.createElement('div');
-        uniticon.innerHTML=`<img src="icons/${unit.name}.png" width=${iconwidth} >`;
+        uniticon.innerHTML=`<img src="icons/${unit.name}.png" width=${iconwidth} > <div class="tooltiptext">Tooltip text</div> `;
         uniticon.setAttribute('class','uniticon_new');
         unitbox.append(uniticon);
     });
@@ -256,7 +267,7 @@ function displayProtossUnits()
     currentrace=2;
     protosslist.forEach(unit => {
         uniticon = document.createElement('div');
-        uniticon.innerHTML=`<img src="icons/${unit.name}.png" width=${iconwidth} >`;
+        uniticon.innerHTML=`<img src="icons/${unit.name}.png" width=${iconwidth} > <div class="tooltiptext">Tooltip text</div> `;
         uniticon.setAttribute('class','uniticon_new');
         unitbox.append(uniticon);
     });
@@ -376,8 +387,8 @@ function displaySelectedUnits()
     footer.innerHTML='';
     selectedUnits.forEach(unit => {
         uniticon = document.createElement('div');
-        uniticon.innerHTML=`<img src="icons/${unit.name}.png" width=iconwidth >`
-        uniticon.setAttribute('class','uniticon_new')
+        uniticon.innerHTML=`<img src="icons/${unit.name}.png" width=${iconwidth} > <div class="tooltiptext">Remove</div>`
+        uniticon.setAttribute('class','uniticon_new ')
         footer.append(uniticon);
     });
 }
@@ -406,6 +417,7 @@ function refreshIncome()
     supply_constant=100/8; // 100 minerals per 8 supply
     document.getElementById('mincounter').innerText=`Overmins/Min: ${overmins.toFixed(2)}`;
     document.getElementById('gascounter').innerText=`Overgas/Min: ${overgas.toFixed(2)}`;
+    
 
     // Loop through selected units and calculate costs
     min_costs=0;
@@ -415,6 +427,9 @@ function refreshIncome()
         min_costs+=60/unit.time*(unit.minerals + supply_constant*unit.supply);
         gas_costs+=60/unit.time*(unit.gas);
     });
+
+    document.getElementById('mincostcounter').innerText=`Min-Costs/Min: ${min_costs.toFixed(2)}`;
+    document.getElementById('gascostcounter').innerText=`Gas-Costs/Min: ${gas_costs.toFixed(2)}`;
 
     maxval=Math.max(min_income,gas_income);
     if(min_costs/min_income*350<=500)
