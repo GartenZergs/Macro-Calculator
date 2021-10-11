@@ -255,7 +255,18 @@ function displayTerranUnits()
     currentrace=1;
     terranlist.forEach(unit => {
         uniticon = document.createElement('div');
-        uniticon.innerHTML=`<img src="icons/${unit.name}.png" width=${iconwidth} > <div class="tooltiptext">Tooltip text</div> `;
+        uniticon.innerHTML=`<img src="icons/${unit.name}.png" width=${iconwidth} >  <div class="tooltiptext"> 
+        <div>Minerals: <img src="icons/minerals.png">  ${unit.minerals}  </div>
+        <div>Gas: <img src="icons/gas.png">  ${unit.gas} </div>
+        <div>Supply: <img src="icons/supply.png">  ${unit.supply} </div>
+        <div>Time: <img src="icons/time.png">  ${unit.time} </div>
+        <div class="costs"> 
+        <div> Unit-Costs/Min: <img src="icons/minerals.png"> ${(unit.minerals*60/unit.time).toFixed(2)} </div>
+        <div> Supply-Costs/Min: <img src="icons/minerals.png"> ${(750/unit.time*unit.supply).toFixed(2)} </div>
+        <div> Unit-Costs/Min: <img src="icons/gas.png"> ${(unit.gas*60/unit.time).toFixed(2)} </div>
+        </div>
+
+         </div>`;
         uniticon.setAttribute('class','uniticon_new');
         unitbox.append(uniticon);
     });
@@ -267,7 +278,18 @@ function displayProtossUnits()
     currentrace=2;
     protosslist.forEach(unit => {
         uniticon = document.createElement('div');
-        uniticon.innerHTML=`<img src="icons/${unit.name}.png" width=${iconwidth} > <div class="tooltiptext">Tooltip text</div> `;
+        uniticon.innerHTML=`<img src="icons/${unit.name}.png" width=${iconwidth} >  <div class="tooltiptext"> 
+        <div>Minerals: <img src="icons/minerals.png">  ${unit.minerals}  </div>
+        <div>Gas: <img src="icons/gas.png">  ${unit.gas} </div>
+        <div>Supply: <img src="icons/supply.png">  ${unit.supply} </div>
+        <div>Time: <img src="icons/time.png">  ${unit.time} </div>
+        <div class="costs"> 
+        <div> Unit-Costs/Min: <img src="icons/minerals.png"> ${(unit.minerals*60/unit.time).toFixed(2)} </div>
+        <div> Supply-Costs/Min: <img src="icons/minerals.png"> ${(750/unit.time*unit.supply).toFixed(2)} </div>
+        <div> Unit-Costs/Min: <img src="icons/gas.png"> ${(unit.gas*60/unit.time).toFixed(2)} </div>
+        </div>
+
+         </div>`;
         uniticon.setAttribute('class','uniticon_new');
         unitbox.append(uniticon);
     });
