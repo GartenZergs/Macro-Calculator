@@ -157,7 +157,7 @@ let protosslist = [
     { name: 'observer', minerals: 25, gas: 75 , supply: 1, time:21},
     { name: 'warpprism', minerals: 250, gas: 0 , supply: 2, time:36},
     { name: 'immortal', minerals: 275, gas: 100 , supply: 4, time:39},
-    { name: 'coloss', minerals: 300, gas: 300 , supply: 6, time:54},
+    { name: 'coloss', minerals: 300, gas: 200 , supply: 6, time:54},
     { name: 'disruptor', minerals: 150, gas: 150 , supply: 3, time:36},
 
     { name: 'phoenix', minerals: 150, gas: 100 , supply: 2, time:25},
