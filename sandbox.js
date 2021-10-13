@@ -228,7 +228,7 @@ let iconwidth=65;
 
 function displayZergUnits()
 {
-    mainframe.style.backgroundImage="url('zerg_console.png')";
+    mainframe.style.backgroundImage="url('images/zerg_console.png')";
     currentrace=0;
     zerglist.forEach(unit => {
         uniticon = document.createElement('div');
@@ -251,7 +251,7 @@ function displayZergUnits()
 
 function displayTerranUnits()
 {
-    mainframe.style.backgroundImage="url('terran_console.png')";
+    mainframe.style.backgroundImage="url('images/terran_console.png')";
     currentrace=1;
     terranlist.forEach(unit => {
         uniticon = document.createElement('div');
@@ -274,7 +274,7 @@ function displayTerranUnits()
 
 function displayProtossUnits()
 {
-    mainframe.style.backgroundImage="url('protoss_console.png')";
+    mainframe.style.backgroundImage="url('images/protoss_console.png')";
     currentrace=2;
     protosslist.forEach(unit => {
         uniticon = document.createElement('div');
