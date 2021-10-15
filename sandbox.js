@@ -228,7 +228,7 @@ let iconwidth=65;
 
 function displayZergUnits()
 {
-    mainframe.style.backgroundImage="url('zerg_console.png')";
+    mainframe.style.backgroundImage="url('images/zerg_console.png')";
     currentrace=0;
     zerglist.forEach(unit => {
         uniticon = document.createElement('div');
@@ -251,7 +251,7 @@ function displayZergUnits()
 
 function displayTerranUnits()
 {
-    mainframe.style.backgroundImage="url('terran_console.png')";
+    mainframe.style.backgroundImage="url('images/terran_console.png')";
     currentrace=1;
     terranlist.forEach(unit => {
         uniticon = document.createElement('div');
@@ -274,7 +274,7 @@ function displayTerranUnits()
 
 function displayProtossUnits()
 {
-    mainframe.style.backgroundImage="url('protoss_console.png')";
+    mainframe.style.backgroundImage="url('images/protoss_console.png')";
     currentrace=2;
     protosslist.forEach(unit => {
         uniticon = document.createElement('div');
@@ -456,27 +456,27 @@ function refreshIncome()
     maxval=Math.max(min_income,gas_income);
     if(min_costs/min_income*350<=500)
     {
-        document.querySelector('.min_cost_bar').style.height=min_costs/min_income*350;
+        document.querySelector('.min_cost_bar').style.height=`${min_costs/min_income*350}px`;
     }
     else if(min_costs==0)
     {
-        document.querySelector('.min_cost_bar').style.height=0;
+        document.querySelector('.min_cost_bar').style.height='0px';
     }
     else
     {
-        document.querySelector('.min_cost_bar').style.height=500;
+        document.querySelector('.min_cost_bar').style.height='500px';
     }
     if(gas_costs/gas_income*350<=500)
     {
-        document.querySelector('.gas_cost_bar').style.height=gas_costs/gas_income*350;
+        document.querySelector('.gas_cost_bar').style.height=`${gas_costs/gas_income*350}px`;
     }
     else if(gas_costs==0)
     {
-        document.querySelector('.gas_cost_bar').style.height=0;
+        document.querySelector('.gas_cost_bar').style.height='0px';
     }
     else
     {
-        document.querySelector('.gas_cost_bar').style.height=500;
+        document.querySelector('.gas_cost_bar').style.height='500px';
     }
     
 
